@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1487494700 source:c:\users\yul kim\documents\data structures\linked list\main.cpp
+	<iostream>
+	"list.h"
+
+1487494602 c:\users\yul kim\documents\data structures\linked list\list.h
+	<iostream>
+

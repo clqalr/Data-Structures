@@ -13,8 +13,8 @@ public:
     int length();
     int cap();
     void display();
-    void insert(int pos, T value);
-    void erase(int pos);
+    void insert(const int &pos, const T &value);
+    void erase(const int &pos);
     void truncate();
     bool empty() const;
     const List<T> &operator=(const List<T> &rhs);
@@ -122,7 +122,7 @@ void List<T>::display()
 * [2][3][4][5][6][7]...[n - 1]
 **************************************************/
 template <class T>
-void List<T>::erase(int pos)
+void List<T>::erase(const int &pos)
 {
     // list is empty
     if (this->empty())
@@ -166,7 +166,7 @@ bool List<T>::empty() const
 * [1][1][2][3][4][5][6][7]...[n - 1]
 **************************************************/
 template <class T>
-void List<T>::insert(int pos, T value)
+void List<T>::insert(const int &pos, const T &value)
 {
     // list is full
     if (size == capacity)
